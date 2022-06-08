@@ -17,8 +17,6 @@ logger = logging.getLogger(__name__)
 
     Property.Text(label="Authorization Token", configurable=True, description="Authorization token for HA API. E.g. ACBS§RSDF#S§%ASDF.sdfs..."),
 
-    Property.Select(label="Continuous Mode", options=['YES','NO'], description="Enable this if the remote url should be refreshed periodically even if our local actor state hasn't changed"),
-    Property.Number(label="Continuous Interval", configurable=True, description="Refresh interval in seconds used in continuous mode"),
     Property.Number(label="EasyPWM sampling time", configurable=True,  description="Time in seconds for power base interval (Default:5)")
     ])
 
@@ -55,7 +53,6 @@ class HAActor(CBPiActor):
 
         self.sampleTime = int(self.props.get("EasyPWM sampling time", 5))
 
-        self.continuous_interval = float(self.props.get("Continuous Interval", 5))
         self.request_session.timeout = float(self.props.get("Request Timeout", 5))
 
         self.state = False
