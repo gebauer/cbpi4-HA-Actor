@@ -38,7 +38,7 @@ A tutorial can be found here: https://www.atomicha.com/home-assistant-how-to-gen
 ## Install plugin
 Currently we only support installation directly from the git repository:
 ```bash
-sudo pip3 install https://github.com/gebauer/cbpi4-HA-Actor/archive/main.zip
+sudo pip3 install https://github.com/gebauer/cbpi4-HA-Actor/archive/refs/heads/main.zip
 ```
 Direct pip installation via repositories will come in the near future.
 
