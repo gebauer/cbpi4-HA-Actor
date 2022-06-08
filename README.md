@@ -42,6 +42,11 @@ sudo pip3 install https://github.com/gebauer/cbpi4-HA-Actor/archive/refs/heads/m
 ```
 Direct pip installation via repositories will come in the near future.
 
+## Configuration
+Enter the appropiate configuration:
+<img width="739" alt="image" src="https://user-images.githubusercontent.com/244549/172670290-a9d6885a-5cb0-46a4-b84e-db54db8f7fc4.png">
+
+
 # Known problems
 None, *yet*. Please report via "issues"!
 
