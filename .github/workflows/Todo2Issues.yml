@@ -7,7 +7,8 @@
           - uses: "actions/checkout@master"
           - name: "TODO to Issue"
             uses: "alstr/todo-to-issue-action@v4.6.6"
+            with:
+               AUTO_ASSIGN: true  
             id: "todo"
-        with:
-          AUTO_ASSIGN: true
+             
   
